@@ -22,7 +22,7 @@ Feature: User should be able to create task by the plus button
   Scenario: Verify that the user cannot create an empty task
     When user clicks on the plus button
     And user clicks to the submit button
-    Then the user should see "" message on screen
+    Then the task should not be created
 
   @TC04
   Scenario Outline: Verify that the user can choose type of category for the task

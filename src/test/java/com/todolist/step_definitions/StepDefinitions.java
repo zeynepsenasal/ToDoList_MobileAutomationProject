@@ -72,7 +72,6 @@ public class StepDefinitions {
     @When("user clicks to the submit button")
     public void clicks_to_the_submit_button() {
         mainPage.submitButton.click();
-      sleep(3);
     }
 
 
@@ -82,7 +81,14 @@ public class StepDefinitions {
         assertTrue(mainPage.nameDisplayedInHomePage.getText().equals(taskName));
     }
 
-
+    @Then("the task should not be created")
+    public void theTaskShouldNotBeCreated() {
+        try{
+            assertFalse(mainPage.nameDisplayedInHomePage.isDisplayed());
+        }catch (Exception e){
+            e.getMessage();
+        }
+    }
 
     @And("user clicks on the category button")
     public void userClicksOnTheCategoryButton() {
@@ -143,7 +149,7 @@ public class StepDefinitions {
     }
     @And("user passes the user tips coming for the first task")
     public void userPassesTheUserTipsComingForTheFirstTask() {
-        sleep(1);
+        sleep(4);
         mainPage.nextButton.click();
         mainPage.nextButton2.click();
         mainPage.okButton.click();
