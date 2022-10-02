@@ -83,6 +83,7 @@ public class StepDefinitions {
     }
 
 
+
     @And("user clicks on the category button")
     public void userClicksOnTheCategoryButton() {
         mainPage.categoriesButton.click();

@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "com/todolist/step_definitions",
-        tags = "@TC07",
+        tags = "@TC03",
         dryRun = false
 
 )

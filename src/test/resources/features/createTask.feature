@@ -19,6 +19,12 @@ Feature: User should be able to create task by the plus button
     Then the user should see the created task on the home page successfully
 
   @TC03
+  Scenario: Verify that the user cannot create an empty task
+    When user clicks on the plus button
+    And user clicks to the submit button
+    Then the user should see "" message on screen
+
+  @TC04
   Scenario Outline: Verify that the user can choose type of category for the task
     When user clicks on the plus button
     And user enters a String to the input box
@@ -35,7 +41,7 @@ Feature: User should be able to create task by the plus button
       | Birthday |
 
 
-  @TC04
+  @TC05
   Scenario Outline: Verify that the user can successfully set a date for the task
     When user clicks on the plus button
     And user enters a String to the input box
@@ -51,7 +57,7 @@ Feature: User should be able to create task by the plus button
       | 3 Days Later |
       | This Sunday  |
 
-  @TC05
+  @TC06
   Scenario: Verify that the user can successfully set time and reminder for the task
     When user clicks on the plus button
     And user enters a String to the input box
@@ -68,7 +74,7 @@ Feature: User should be able to create task by the plus button
     And user closes the window appeared for reminder setting
     Then the user should see the created task on the home page successfully
 
-  @TC06
+  @TC07
   Scenario: Verify that the user can successfully create a task by using a template
     When user clicks on the plus button
     And user clicks on the templates button
@@ -77,7 +83,7 @@ Feature: User should be able to create task by the plus button
     And user passes the user tips coming for the first task
     Then the user should see the "Go Exercising" task on the home page successfully
 
-  @TC07
+  @TC08
   Scenario: Verify that the user can successfully create subtasks under the task
     When user clicks on the plus button
     And user enters a String to the input box
