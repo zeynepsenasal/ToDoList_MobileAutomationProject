@@ -8,3 +8,6 @@
 ### 7. Page Object Model (POM) implemented with the "BasePage" class to centralize the locators of mobile elements and avoid hardcoding.
 ### 8. Singleton Design Pattern implemented in Driver class in order to use single driver object and avoid synchronization issues.
 ### 9. ConfigurationReader class is used to retrieve some of the test data from the configuration.properties file in order to be able to manage the test data from a central location.
+
+https://user-images.githubusercontent.com/97560727/193678664-dcb8338c-6110-40ac-9b3c-5631f151ab90.mp4
+
