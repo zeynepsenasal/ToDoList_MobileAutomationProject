@@ -12,8 +12,9 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "com/todolist/step_definitions",
-        tags = "@TC03",
-        dryRun = false
+        tags = "@US01",
+        dryRun = false,
+        publish = true
 
 )
 public class CukesRunner {
