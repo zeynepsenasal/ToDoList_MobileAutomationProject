@@ -21,6 +21,7 @@ Feature: User should be able to create task by the plus button
   @TC03
   Scenario: Verify that the user cannot create an empty task
     When user clicks on the plus button
+    And user enters blank space to the input box
     And user clicks to the submit button
     Then the task should not be created
 

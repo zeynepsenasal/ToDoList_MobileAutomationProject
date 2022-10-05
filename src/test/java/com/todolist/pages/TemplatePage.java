@@ -14,7 +14,7 @@ public class TemplatePage {
         PageFactory.initElements(new AppiumFieldDecorator(Driver.getDriver()),this);
     }
 
-    @AndroidFindBy(xpath = "//android.widget.LinearLayout/android.widget.TextView")
+    @AndroidFindBy(id= "todolist.scheduleplanner.dailyplanner.todo.reminders:id/adk")
     public List<MobileElement> templateOptions;
 
     @AndroidFindBy(id= "todolist.scheduleplanner.dailyplanner.todo.reminders:id/aaq")

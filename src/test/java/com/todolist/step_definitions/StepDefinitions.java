@@ -81,6 +81,11 @@ public class StepDefinitions {
         assertTrue(mainPage.nameDisplayedInHomePage.getText().equals(taskName));
     }
 
+    @And("user enters blank space to the input box")
+    public void userEntersBlankSpaceToTheInputBox() {
+        mainPage.name_inputBox.sendKeys("  ");
+    }
+
     @Then("the task should not be created")
     public void theTaskShouldNotBeCreated() {
         try{
