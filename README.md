@@ -8,3 +8,5 @@
 ### 7. Page Object Model (POM) implemented with the "BasePage" class to centralize the locators of mobile elements and avoid hardcoding.
 ### 8. Singleton Design Pattern implemented in Driver class in order to use single driver object and avoid synchronization issues.
 ### 9. ConfigurationReader class is used to retrieve some of the test data from the configuration.properties file in order to be able to manage the test data from a central location.
+
+![Android Emulator - Pixel_3_API_29_5554 2022-10-03 17-40-50_Trim](https://user-images.githubusercontent.com/97560727/193678764-be702b78-7763-49f7-8a9b-b8fc3b9d24ab.gif)
