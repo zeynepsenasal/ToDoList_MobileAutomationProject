@@ -33,6 +33,7 @@ Feature: User should be able to create task by the plus button
     And user clicks to the submit button
     And user passes the user tips coming for the first task
     Then the user should see the created task on the home page successfully
+    Then user should see the selected category type by clicking on the created task
     Examples:
       | Category |
       | Work     |

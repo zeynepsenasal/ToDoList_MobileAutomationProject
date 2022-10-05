@@ -4,6 +4,8 @@ import com.todolist.utilities.Driver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.PageFactory;
 import java.util.List;
 
@@ -49,6 +51,9 @@ public class MainPage {
     @AndroidFindBy(id="a_b")
     public MobileElement categoriesButton;
 
+    @AndroidFindBy(id="a_i")
+    public MobileElement categoryDisplayedInsideTask;
+
     @AndroidFindBy(id= "a_9")
     public MobileElement calenderButton;
 
@@ -60,7 +65,7 @@ public class MainPage {
     public MobileElement creationTab;
 
 
-    @AndroidFindBy(xpath = "//androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout")
+    @AndroidFindBy(id = "todolist.scheduleplanner.dailyplanner.todo.reminders:id/a9x")
     public List<MobileElement> categories;
 
     @AndroidFindBy(id= "todolist.scheduleplanner.dailyplanner.todo.reminders:id/a_d")
@@ -76,10 +81,13 @@ public class MainPage {
     @AndroidFindBy(id="todolist.scheduleplanner.dailyplanner.todo.reminders:id/j_")
     public MobileElement closeWindow;
 
+
+
     public void selectCategory(String category){
         for (MobileElement option : categories) {
-            if(option.getText().equalsIgnoreCase(category)){
+            if(option.getText().contains(category)){
                 option.click();
+                break;
             }
         }
     }

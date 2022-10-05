@@ -96,10 +96,20 @@ public class StepDefinitions {
         sleep(2);
     }
 
+    String selectetCategory="";
+
     @And("user chooses a type of {string} on the tab")
     public void userChoosesATypeOfOnTheTab(String category) {
         mainPage.selectCategory(category);
+        selectetCategory=category;
         sleep(2);
+    }
+
+    @Then("user should see the selected category type by clicking on the created task")
+    public void userShouldSeeTheSelectedCategoryTypeByClickingOnTheCreatedTask() {
+        mainPage.nameDisplayedInHomePage.click();
+        sleep(1);
+        assertEquals(mainPage.categoryDisplayedInsideTask.getText(), selectetCategory);
     }
 
     @And("user clicks on the calendar button")

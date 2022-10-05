@@ -22,7 +22,7 @@ public class TemplatePage {
 
     public void selectTemplate(String template){
         for (MobileElement templateOption : templateOptions) {
-            if(templateOption.getText().equalsIgnoreCase(template)){
+            if(templateOption.getText().contains(template)){
                 templateOption.click();
                 break;
             }
