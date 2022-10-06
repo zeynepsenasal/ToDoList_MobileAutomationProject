@@ -1,4 +1,3 @@
-## This framework has been created by Zeynep Sena Saltık for automation testing of the "To-Do List" mobile application.
 ### 1. The framework consists of automation test cases for "To-Do List" which is a mobile application where users can create a list of tasks and plans.This app has been chosen because it allows the users to create their interface.
 ### 2. The application is tested against a virtual device by using Android Studio, Appium Inspector and Appium Server GUI.
 ### 3. BDD approach implemented by using Cucumber, Java, Appium, and JUnit.
